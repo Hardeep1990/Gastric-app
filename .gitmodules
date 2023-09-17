@@ -1,0 +1,3 @@
+[submodule "Gastric-app"]
+	path = Gastric-app
+	url = https://github.com/Hardeep1990/Gastric-app.git

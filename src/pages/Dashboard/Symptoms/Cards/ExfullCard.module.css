@@ -1,0 +1,52 @@
+.eFull{
+    width: 3.5rem;
+	margin-left: 2rem;
+	margin-top: 4rem;
+	border-radius: 0rem;
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+    /* background-color: aqua; */
+}
+.card6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:  #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 9.611rem;
+    width:8.215rem;
+    margin-top: .5rem;
+    border-radius:0.339rem;
+    margin-left:1.2rem;
+    /* background-color: pink; */
+}
+.card6:hover{
+    box-shadow: 1px 1px 5px 4px lightblue;
+}
+.emojiRating{
+    /* background-color: rgb(38, 211, 110); */
+    margin-bottom: -4.8rem;
+	margin-left: 6rem;
+	width: 2rem;
+	height: 2rem;
+}
+.showEmoji{
+    width: 1.9rem;
+    height: 1.8rem;
+    /* margin-bottom: -1rem; */
+}
+
+.row1Text{
+    flex-wrap: wrap;
+    font-family: var(--ff-primary);
+    font-size: .9rem;
+    font-weight: var(--fw-400);
+    line-height: 1rem;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #000000;
+    margin-top: .5rem;
+    /* margin-bottom: 3rem; */
+    /* background-color: bisque; */
+}

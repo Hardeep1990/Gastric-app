@@ -1,0 +1,558 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  box-sizing: content-box;
+  max-height: 100%;
+  margin-bottom: 0px;
+  overflow: hidden;
+  background-color: white;
+  padding-bottom: 0px !important;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  height: 100%;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50vw;
+  margin: 1rem 0 2rem 0;
+  padding-top: 2rem;
+}
+
+.textArea div:nth-child(1) {
+  color: var(--primary-blue);
+  /* font-size: var(--fs-large);
+	font-weight: var(--fw-700); */
+  margin-bottom: 1rem;
+}
+
+.textArea div:nth-child(2) {
+  color: var(--fc-dark);
+  margin: 0.5rem 0;
+  line-height: 1.5rem;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+}
+
+.contactUsForm {
+  border: 1px solid var(--background-white);
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.contactUsForm::placeholder {
+  color: var(--fc-dark);
+}
+
+.textBox::placeholder {
+  color: var(--fc-dark);
+  font-size: var(--fs-smallest);
+}
+
+.textBox {
+  border: 1px solid var(--background-white);
+  resize: none;
+  width: 65vw;
+  height: 40vw;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.submitBtn {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-400);
+  background-color: var(--secondary-blue);
+  color: white;
+  border: none;
+  width: 65vw;
+  height: 3rem;
+  margin-top: 1rem;
+}
+.backBtn {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-400);
+  background-color: #f2f1f6;
+  color: var(--secondary-blue);
+  border: 1px solid var(--secondary-blue);
+  width: 65vw;
+  height: 3rem;
+  margin-top: 1rem;
+}
+.backBtn:hover,
+.submitBtn:hover {
+  background-color: var(--primary-blue);
+  color: #f2f1f6;
+}
+
+/* success modal */
+.outterSuccessModal {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(120, 118, 118, 0.2);
+  backdrop-filter: blur(5px);
+  top: 0;
+}
+
+.closeSuccessModal {
+  display: none;
+}
+
+.innerSuccessModal {
+  display: flex;
+  box-sizing: content-box;
+  flex-direction: column;
+  align-items: center;
+  width: 85vw;
+  height: 32vh;
+  top: 25vh;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.successCloseIconContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 85vw;
+}
+
+.successCloseIconContainer > img {
+  padding: 0.1rem 0.1rem 0 0;
+}
+
+.successHeading {
+  display: flex;
+  align-items: center;
+}
+
+.successHeading > img {
+  margin-right: 0.5rem;
+}
+
+.successHeading > span {
+  font-size: var(--fs-medium);
+  color: var(--primary-blue);
+  font-weight: var(--fw-700);
+}
+
+.successBodyText {
+  font-size: var(--fs-small);
+  line-height: 30px;
+  width: 75vw;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.successBodyText > div {
+  text-align: justify;
+}
+.successBodyText > div:nth-child(1) {
+  margin: 1.5rem 0;
+}
+
+/* error modal */
+.outterErrorModal {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(120, 118, 118, 0.2);
+  backdrop-filter: blur(5px);
+  top: 0;
+}
+
+.closeErrorModal {
+  display: none;
+}
+
+.innerErrorModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85vw;
+  height: 38vh;
+  top: 25vh;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.errorCloseIconContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 85vw;
+}
+
+.errorCloseIconContainer > img {
+  padding: 0.1rem 0.1rem 0 0;
+}
+
+.errorHeading {
+  display: flex;
+  align-items: center;
+}
+
+.errorHeading > img {
+  margin-right: 0.5rem;
+}
+
+.errorHeading > span {
+  font-size: var(--fs-medium);
+  color: var(--primary-blue);
+  font-weight: var(--fw-700);
+}
+
+.errorBodyText {
+  font-size: var(--fs-small);
+  line-height: 30px;
+  width: 75vw;
+}
+
+.errorBodyText > div:nth-child(1) {
+  margin: 1.5rem 0;
+}
+@media screen and (min-width: 400px) {
+  .formContainer {
+    width: 50vw;
+  }
+  .textBox {
+    width: 50vw;
+    height: 20vw;
+  }
+  .submitBtn,
+  .backBtn {
+    width: 50vw;
+  }
+
+  /* success modal */
+  .innerSuccessModal {
+    width: 55vw;
+    height: 36vh;
+  }
+  .successCloseIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 55vw;
+  }
+  .successCloseIconContainer > img {
+    padding: 0.2rem 0.2rem 0 0;
+  }
+  .successBodyText {
+    font-size: var(--fs-small);
+    line-height: 30px;
+    width: 45vw;
+  }
+  .successBodyText > div:nth-child(1) {
+    margin: 1.5rem 0;
+  }
+
+  /* error modal */
+  .closeErrorModal {
+    display: none;
+  }
+  .innerErrorModal {
+    width: 60vw;
+    height: 30vh;
+  }
+  .errorCloseIconContainer {
+    width: 60vw;
+  }
+  .errorCloseIconContainer > img {
+    padding: 0.2rem 0.2rem 0 0;
+  }
+  .errorHeading > img {
+    margin-right: 0.5rem;
+  }
+  .errorBodyText {
+    width: 50vw;
+  }
+}
+.errorMessage {
+  color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .formContainer {
+    width: 50vw;
+  }
+  .textBox {
+    width: 50vw;
+    height: 10vw;
+  }
+  .submitBtn,
+  .backBtn {
+    width: 50vw;
+  }
+
+  /* success modal */
+  .innerSuccessModal {
+    width: 55vw;
+    height: 36vh;
+  }
+  .successCloseIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 55vw;
+  }
+  .successCloseIconContainer > img {
+    padding: 0.2rem 0.2rem 0 0;
+  }
+  .successBodyText {
+    font-size: var(--fs-small);
+    line-height: 30px;
+    width: 45vw;
+  }
+  .successBodyText > div:nth-child(1) {
+    margin: 1.5rem 0;
+  }
+
+  /* error modal */
+  .closeErrorModal {
+    display: none;
+  }
+  .innerErrorModal {
+    width: 60vw;
+    height: 30vh;
+  }
+  .errorCloseIconContainer {
+    width: 60vw;
+  }
+  .errorCloseIconContainer > img {
+    padding: 0.2rem 0.2rem 0 0;
+  }
+  .errorHeading > img {
+    margin-right: 0.5rem;
+  }
+  .errorBodyText {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .formContainer {
+    width: 42vw;
+  }
+  .textBox {
+    width: 42vw;
+    height: 10vw;
+  }
+  .submitBtn,
+  .backBtn {
+    width: 42vw;
+  }
+
+  /* success modal */
+  .innerSuccessModal {
+    width: 40vw;
+    height: 36vh;
+  }
+  .successCloseIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 40vw;
+  }
+  .successCloseIconContainer > img {
+    padding: 0.2rem 0.2rem 0 0;
+  }
+  .successBodyText {
+    font-size: var(--fs-small);
+    line-height: 30px;
+    width: 30vw;
+  }
+  .successBodyText > div:nth-child(1) {
+    margin-top: 1.5rem;
+  }
+
+  /* error modal */
+  .innerErrorModal {
+    width: 42vw;
+    height: 30vh;
+  }
+  .errorCloseIconContainer {
+    width: 42vw;
+  }
+  .errorCloseIconContainer > img {
+    padding: 0.2rem 0.2rem 0 0;
+  }
+  .errorHeading > img {
+    margin-right: 0.5rem;
+  }
+  .errorBodyText {
+    width: 35vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .formContainer {
+    width: 30vw;
+  }
+  .textBox {
+    width: 30vw;
+    height: 10vw;
+  }
+  .submitBtn,
+  .backBtn {
+    width: 30vw;
+  }
+
+  /* success modal */
+  .innerSuccessModal {
+    width: 34vw;
+    height: 30vh;
+  }
+  .successCloseIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 8px;
+  }
+  .successCloseIconContainer > img {
+    padding: 0.2rem 0.2rem 0 0;
+  }
+  .successBodyText {
+    font-size: var(--fs-small);
+    line-height: 30px;
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .successBodyText > div:nth-child(1) {
+    margin-top: 1.5rem;
+  }
+
+  /* error modal */
+  .innerErrorModal {
+    width: 30vw;
+    height: 30vh;
+  }
+  .errorCloseIconContainer {
+    width: 30vw;
+  }
+  .errorCloseIconContainer > img {
+    padding: 0.2rem 0.2rem 0 0;
+  }
+  .errorHeading > img {
+    margin-right: 0.5rem;
+  }
+  .errorBodyText {
+    width: 25vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .formContainer {
+    width: 22vw;
+  }
+  .textBox {
+    width: 22vw;
+    height: 10vw;
+  }
+  .submitBtn,
+  .backBtn {
+    width: 22vw;
+  }
+
+  /* success modal */
+  .innerSuccessModal {
+    width: 30vw;
+    height: 29vh;
+  }
+  .successCloseIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .successBodyText {
+    line-height: 30px;
+    width: 30vw;
+  }
+  .successBodyText > div:nth-child(1) {
+    margin: 1.5rem 0;
+  }
+
+  /* error modal */
+  .innerErrorModal {
+    width: 24vw;
+    height: 35vh;
+  }
+  .errorCloseIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 24vw;
+  }
+  .errorBodyText {
+    line-height: 30px;
+    width: 20vw;
+  }
+}
+
+@media screen and (min-width: 2880px) {
+  .formContainer {
+    width: 20vw;
+  }
+  .textBox {
+    width: 20vw;
+    height: 8vw;
+  }
+  .submitBtn,
+  .backBtn {
+    width: 20vw;
+  }
+
+  /* success modal */
+  .innerSuccessModal {
+    width: 12vw;
+    height: 14.5vh;
+  }
+  .successCloseIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 12vw;
+  }
+
+  .successBodyText {
+    line-height: 30px;
+    width: 10.5vw;
+  }
+  .successBodyText > div:nth-child(1) {
+    margin: 1.5rem 0;
+  }
+
+  /* error modal */
+  .innerErrorModal {
+    width: 13vw;
+    height: 17vh;
+  }
+  .errorCloseIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 13vw;
+  }
+  .errorBodyText {
+    line-height: 30px;
+    width: 10.5vw;
+  }
+}

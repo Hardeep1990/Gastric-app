@@ -1,0 +1,267 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 91vh;
+  justify-content: space-between;
+}
+.innerMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+}
+.textContainer {
+  width: 80vw;
+  text-align: center;
+}
+.textContainer > div {
+  font-size: var(--fs-small);
+  color: var(--primary-blue);
+  font-weight: var(--fw-700);
+  margin: 3rem 0 1.5rem 0;
+}
+.sliderTextTop {
+  text-align: center;
+  width: 30vw;
+  font-weight: 800;
+  font-size: 20px;
+}
+.sliderTextBot {
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+}
+.sliderContainer {
+  display: flex;
+  margin: 1.5rem 0;
+  justify-content: center;
+  align-items: center;
+}
+.innerSliderContainer {
+  display: flex;
+  justify-content: center;
+  height: 36vh;
+}
+.mainEmojiContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 14vw;
+  height: 37vh;
+  padding-right: 0.7em;
+}
+.emojiContainer {
+  display: flex;
+  align-items: center;
+}
+.emojiContainer > span {
+  padding-left: 1em;
+}
+.emojis {
+  width: 7.5vw;
+  cursor: pointer;
+}
+.mainValueContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 14vw;
+  height: 36.55vh;
+}
+.valueContainer {
+  display: flex;
+  align-items: center;
+}
+.valueContainer > span {
+  padding-right: 1em;
+}
+.valuesArray {
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.arrowContainer {
+  display: flex;
+  flex-direction: column;
+  margin: -1rem 0 0 -8rem;
+}
+.arrow {
+  margin: 0 0 -1rem -1.2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.buttonFinish {
+  width: 190px;
+  height: 48px;
+  font-family: "DM Sans";
+  font-style: normal;
+  background: #3c6ba5;
+  border: 1px solid #3c6ba5;
+  padding: 0px 12px;
+  margin-bottom: 3rem;
+  position: relative;
+  color: white;
+}
+
+.buttonFinish:hover {
+  background-color: var(--primary-blue) !important;
+  color: #f2f1f6 !important;
+}
+
+.buttonFinish:disabled,
+.buttonFinish:disabled:hover {
+  background-color: #e0e0e0;
+  color: white;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.buttonFinish:hover:disabled {
+  background-color: #e0e0e0;
+  color: white;
+}
+
+@media screen and (min-width: 375px) {
+  .innerSliderContainer {
+    height: 35vh;
+  }
+  .mainEmojiContainer {
+    padding-right: 1em;
+  }
+  .emojis {
+    width: 7vw;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .mainEmojiContainer {
+    padding-right: 1em;
+  }
+  .emojis {
+    width: 6.5vw;
+  }
+  .mainValueContainer {
+    width: 14vw;
+    height: 36.55vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainEmojiContainer {
+    width: 7.5vw;
+    padding-right: 1.5em;
+  }
+  .emojis {
+    width: 4vw;
+  }
+  .mainValueContainer {
+    width: 7.5vw;
+    height: 36vh;
+  }
+  .buttonContainer {
+    margin-top: 4rem;
+  }
+  .buttonContainer > button {
+    width: 30vw;
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mainEmojiContainer {
+    width: 6vw;
+    padding-right: 1.6em;
+  }
+  .emojis {
+    width: 3vw;
+  }
+  .mainValueContainer {
+    width: 6vw;
+    height: 35.8vh;
+  }
+  .buttonContainer {
+    margin-top: 4rem;
+  }
+  .buttonContainer > button {
+    width: 20vw;
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mainEmojiContainer {
+    width: 4vw;
+    padding-right: 1.6em;
+  }
+  .emojis {
+    width: 2.5vw;
+  }
+  .mainValueContainer {
+    width: 4vw;
+    height: 35.8vh;
+  }
+  .buttonContainer {
+    margin-top: 5rem;
+  }
+  .buttonContainer > button {
+    width: 15vw;
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .mainEmojiContainer {
+    width: 4vw;
+    padding-right: 2em;
+  }
+  .emojis {
+    width: 1.5vw;
+  }
+  .mainValueContainer {
+    width: 4vw;
+    height: 36vh;
+  }
+  .buttonContainer {
+    margin-top: 5rem;
+  }
+  .buttonContainer > button {
+    width: 15vw;
+  }
+}
+
+@media screen and (min-width: 2880px) {
+  .innerSliderContainer {
+    height: 35.4vh;
+  }
+  .mainEmojiContainer {
+    width: 2.5vw;
+    padding-right: 2em;
+  }
+  .emojis {
+    width: 1.5vw;
+  }
+  .mainValueContainer {
+    width: 2.5vw;
+  }
+  .buttonContainer {
+    margin-top: 5rem;
+  }
+  .buttonContainer > button {
+    width: 12vw;
+    margin-right: 20rem;
+  }
+}

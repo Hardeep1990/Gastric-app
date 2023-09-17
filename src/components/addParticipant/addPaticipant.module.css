@@ -1,0 +1,353 @@
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: white;
+}
+
+.addParticipantText {
+  color: var(--primary-blue);
+  font-size: var(--fs-large);
+  font-weight: var(--fw-700);
+  margin: 10rem 0 3.5rem 0;
+  text-align: center;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 50vh;
+}
+
+.formInnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.inputContainers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.labelFields {
+  width: 24vw;
+}
+
+.inputFields::placeholder {
+  color: var(--fc-dark);
+}
+
+.inputFields,
+.selectDropdown {
+  border: 1px solid var(--background-white);
+  color: var(--fc-dark);
+  border-radius: 3.84px;
+  width: 55vw;
+  height: 4vh;
+  padding-left: 0.5rem;
+  margin: 0.2rem 0;
+}
+
+.addBtn {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-400);
+  background-color: var(--secondary-blue);
+  width: 80vw;
+  height: 3rem;
+  margin-top: 2.5rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.addBtn:hover {
+  background-color: var(--primary-blue);
+  color: #f2f1f6;
+}
+
+.openModal {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  /* height: 100vh; */
+  position: absolute;
+  background-color: rgba(120, 118, 118, 0.2);
+  backdrop-filter: blur(5px);
+  top: 0;
+}
+
+.closedModal {
+  display: none;
+}
+
+.modalInnerContainer {
+  background-color: white;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  width: 74vw;
+  height: 32vh;
+  top: 30vh;
+  right: 12vw;
+  border-radius: 10px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 74vw;
+  padding: 0.5rem;
+}
+
+.textBox {
+  width: 56vw;
+  text-align: center;
+}
+
+.textBox div {
+  margin-top: 1rem;
+}
+
+.textBox div:nth-child(1) {
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-700);
+  color: var(--primary-blue);
+  letter-spacing: -1px;
+}
+
+.textBoxdiv:nth-child(2) {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-400);
+}
+
+@media screen and (min-width: 768px) {
+  .formContainer {
+    width: 65vw;
+    height: 45vh;
+  }
+
+  .formInnerContainer {
+    width: 65vw;
+  }
+  .inputFields,
+  .selectDropdown {
+    width: 48vw;
+    height: 4vh;
+  }
+
+  .addBtn {
+    width: 65vw;
+    height: 3rem;
+  }
+
+  .openModal {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(120, 118, 118, 0.2);
+    backdrop-filter: blur(5px);
+    top: 0;
+  }
+
+  .closedModal {
+    display: none;
+  }
+
+  .modalInnerContainer {
+    width: 50vw;
+    height: 30vh;
+    right: 25vw;
+  }
+
+  .iconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .formContainer {
+    width: 50vw;
+    height: 44vh;
+  }
+
+  .formInnerContainer {
+    width: 50vw;
+  }
+  .inputFields,
+  .selectDropdown {
+    width: 50vw;
+    height: 4vh;
+  }
+
+  .addBtn {
+    width: 50vw;
+    height: 3rem;
+  }
+
+  .openModal {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(120, 118, 118, 0.2);
+    backdrop-filter: blur(5px);
+    top: 0;
+  }
+
+  .closedModal {
+    display: none;
+  }
+
+  .modalInnerContainer {
+    width: 38vw;
+    height: 30vh;
+    right: 30vw;
+  }
+
+  .iconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 38vw;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .formContainer {
+    width: 40vw;
+    height: 44vh;
+  }
+  .formInnerContainer {
+    width: 40vw;
+  }
+  .inputFields,
+  .selectDropdown {
+    width: 50vw;
+    height: 4vh;
+  }
+  .addBtn {
+    width: 40vw;
+    height: 3rem;
+  }
+  .openModal {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(120, 118, 118, 0.2);
+    backdrop-filter: blur(5px);
+    top: 0;
+  }
+  .closedModal {
+    display: none;
+  }
+  .modalInnerContainer {
+    width: 28vw;
+    height: 30vh;
+    right: 36vw;
+  }
+  .iconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 28vw;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .formContainer {
+    width: 24vw;
+    height: 44vh;
+  }
+  .formInnerContainer {
+    width: 24vw;
+  }
+  .inputFields,
+  .selectDropdown {
+    width: 50vw;
+    height: 4vh;
+  }
+  .addBtn {
+    width: 24vw;
+    height: 3rem;
+  }
+  .openModal {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(120, 118, 118, 0.2);
+    backdrop-filter: blur(5px);
+    top: 0;
+  }
+  .closedModal {
+    display: none;
+  }
+  .modalInnerContainer {
+    width: 22vw;
+    height: 32vh;
+    right: 39.5vw;
+  }
+  .iconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 22vw;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 2880px) {
+  .formContainer {
+    width: 22vw;
+  }
+  .formInnerContainer {
+    width: 22vw;
+  }
+  .inputFields,
+  .selectDropdown {
+    width: 55vw;
+    height: 3.5vh;
+  }
+  .addBtn {
+    width: 24vw;
+    height: 3rem;
+  }
+  .openModal {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(120, 118, 118, 0.2);
+    backdrop-filter: blur(5px);
+    top: 0;
+  }
+  .closedModal {
+    display: none;
+  }
+  .modalInnerContainer {
+    width: 22vw;
+    height: 32vh;
+    right: 39.5vw;
+  }
+  .iconContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 22vw;
+    padding: 0.5rem;
+  }
+}

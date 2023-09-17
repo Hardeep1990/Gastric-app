@@ -1,0 +1,49 @@
+.card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 9.611rem;
+  width: 8.215rem;
+  margin-top: 0.5rem;
+  border-radius: 0.339rem;
+  margin-left: 1.2rem;
+}
+.card4:hover{
+  box-shadow: 1px 1px 5px 4px lightblue;
+}
+.heartBurn {
+  /* height: 6.6rem; */
+  width: 3.5rem;
+  margin-left: 2rem;
+  /* margin-top: 3.3rem; */
+  display: flex;
+  justify-content: center;
+  /* background-color: aquamarine; */
+}
+.row1Text {
+  flex-wrap: wrap;
+  font-family: var(--ff-primary);
+  font-size: 0.9rem;
+  font-weight: var(--fw-400);
+  line-height: 1rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #000000;
+  margin-top: 0.5rem;
+  /* margin-bottom: .1rem; */
+  /* background-color: bisque; */
+}
+.emojiRating {
+  /* background-color: aqua; */
+  /* margin-bottom: -1rem; */
+  margin-left: 6rem;
+  width: 2rem;
+  height: 2rem;
+}
+.showEmoji {
+  width: 1.9rem;
+  height: 1.8rem;
+  margin-bottom: -1rem;
+}

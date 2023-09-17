@@ -1,0 +1,157 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100vw;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  padding: 8rem 0 2.5rem 0;
+  background-color: white;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: white;
+}
+
+.loginInnerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  text-align: center;
+}
+
+.headingText {
+  color: var(--primary-blue);
+  font-size: var(--fs-large);
+  font-weight: var(--fw-700);
+  padding-bottom: 0.5rem;
+}
+
+.subHeadingText {
+  margin-bottom: 1.5rem;
+}
+
+.inputEmail,
+.inputPwd {
+  border: 1px solid var(--background-white);
+  width: 78vw;
+  height: 6vh;
+  padding-left: 1rem;
+}
+
+.inputEmail {
+  border-radius: 3px 3px 0 0;
+}
+
+.inputPwd {
+  border-radius: 0 0 3px 3px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  width: 78vw;
+  margin: 0.9rem 0 0.9rem 0;
+}
+
+.checkboxInnerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxText {
+  color: var(--fc-dark);
+  font-size: var(--fs-smallest);
+  font-weight: var(--fw-400);
+  margin-left: 0.3rem;
+}
+
+.signInBtn {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-400);
+  background-color: var(--secondary-blue);
+  width: 78vw;
+  height: 3rem;
+  padding: 0 0.75rem;
+  letter-spacing: 0.0238rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .inputEmail,
+  .inputPwd {
+    width: 44vw;
+    height: 5vh;
+  }
+  .checkboxContainer {
+    width: 44vw;
+  }
+  .signInBtn {
+    width: 44vw;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .inputEmail,
+  .inputPwd {
+    width: 33vw;
+    height: 4.5vh;
+  }
+  .checkboxContainer {
+    width: 33vw;
+  }
+  .signInBtn {
+    width: 33vw;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .inputEmail,
+  .inputPwd {
+    width: 23.5vw;
+    height: 4.5vh;
+  }
+  .checkboxContainer {
+    width: 23.5vw;
+  }
+  .signInBtn {
+    width: 23.5vw;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .inputEmail,
+  .inputPwd {
+    width: 17.5vw;
+    height: 4.5vh;
+  }
+  .checkboxContainer {
+    width: 17.5vw;
+  }
+  .signInBtn {
+    width: 17.5vw;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 2880px) {
+  .inputEmail,
+  .inputPwd {
+    height: 4vh;
+  }
+}

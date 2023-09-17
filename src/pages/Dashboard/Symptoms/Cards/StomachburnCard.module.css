@@ -1,0 +1,59 @@
+.stomachBurn {
+  height: 7.138rem;
+  width: 3.973rem;
+  margin-left: 2.1rem;
+  margin-top: 1rem;
+  border-radius: 0rem;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  /* background-color: aquamarine; */
+}
+.emojiRating {
+  /* background-color: aqua; */
+  /* margin-top: 1.7rem; */
+  margin-bottom: -0.9rem;
+  margin-left: 6rem;
+  width: 2rem;
+  height: 2.2rem;
+}
+.showEmoji {
+  width: 1.9rem;
+  height: 1.8rem;
+  margin-bottom: -1.2rem;
+}
+.card5:hover {
+  box-shadow: 1px 1px 5px 4px lightblue;
+}
+
+.card5 {
+  margin-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 0.339rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 9.611rem;
+  width: 8.215rem;
+  left: 0rem;
+  top: 0rem;
+  margin-top: 0.5rem;
+  border-radius: 0.339rem;
+  right: -0.027rem;
+  bottom: 0.014rem;
+}
+.row1Text {
+  flex-wrap: wrap;
+  font-family: var(--ff-primary);
+  font-size: 0.9rem;
+  font-weight: var(--fw-400);
+  line-height: 1rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #000000;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  /* background-color: bisque; */
+}

@@ -1,0 +1,368 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: white;
+}
+
+.heroContainer {
+  background-color: var(--primary-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.outterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.innerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.loginTextHeader {
+  color: var(--primary-blue);
+  font-size: var(--fs-large);
+  font-weight: var(--fw-700);
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.loginSubHeader {
+  font-size: var(--fs-smallest);
+  font-weight: var(--fw-400);
+  color: var(--fc-dark);
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.inputField {
+  border: 1px solid var(--background-white);
+  width: 60vw;
+  height: 6vh;
+  padding-left: 1rem;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  width: 60.5vw;
+  margin: 0.4rem 0 0.9rem 0;
+}
+.checkbox {
+  margin-right: 0.25rem;
+}
+
+.checkboxInnerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxText {
+  color: var(--fc-dark);
+}
+
+.signInButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signInButton {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-400);
+  background-color: var(--secondary-blue);
+  width: 60vw;
+  height: 3rem;
+  padding: 0 0.75rem;
+  letter-spacing: 0.0238rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.signInButton:hover {
+  background-color: var(--primary-blue);
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 7rem;
+  width: 60.5vw;
+  cursor: pointer;
+}
+
+.contact span {
+  font-size: var(--fs-smallest);
+  color: var(--fc-dark);
+  margin: 0.5rem 0 0 0.2rem;
+  text-decoration: underline;
+}
+
+.openModal {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(120, 118, 118, 0.2);
+  backdrop-filter: blur(5px);
+  top: 0;
+}
+
+.closedModal {
+  display: none;
+}
+
+.modalInnerContainer {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 74vw;
+  height: 55vh;
+  top: 25vh;
+  border-radius: 10px;
+}
+
+.upperModal {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.upperModal div {
+  color: var(--primary-blue);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: var(--fw-700);
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.lowerModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.InnerLowerModal {
+  display: flex;
+  flex-direction: column;
+  width: 62vw;
+}
+
+.nameBox div {
+  font-size: var(--fs-small);
+  padding: 0 0 1.2rem 0.35rem;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.yesBtn {
+  background-color: var(--secondary-blue);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-500);
+  color: white;
+  width: 60vw;
+  height: 3rem;
+  padding: 0 0.75rem 0 0.75rem;
+  margin: 0.5rem 0 0.5rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+.noBtn {
+  border: 1px solid var(--secondary-blue);
+  color: var(--secondary-blue);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-500);
+  background-color: white;
+  width: 60vw;
+  height: 3rem;
+  padding: 0 0.75rem 0 0.75rem;
+  margin: 0.5rem 0 0.5rem 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .inputField {
+    width: 41vw;
+    height: 5vh;
+  }
+  .checkboxContainer {
+    width: 41vw;
+  }
+  .signInButton {
+    width: 41vw;
+    height: 3rem;
+  }
+  .contact {
+    margin-bottom: 7rem;
+    width: 41vw;
+  }
+  .modalInnerContainer {
+    width: 55vw;
+    height: 40vh;
+  }
+  .InnerLowerModal {
+    width: 42vw;
+  }
+  .yesBtn {
+    width: 42vw;
+  }
+  .noBtn {
+    width: 42vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .inputField {
+    width: 30vw;
+    height: 5vh;
+  }
+  .checkboxContainer {
+    width: 30vw;
+  }
+  .signInButton {
+    width: 30vw;
+    height: 3rem;
+  }
+  .contact {
+    margin-bottom: 7rem;
+    width: 30vw;
+  }
+  .modalInnerContainer {
+    width: 40vw;
+    height: 46vh;
+  }
+  .InnerLowerModal {
+    width: 32vw;
+  }
+  .yesBtn {
+    width: 32vw;
+  }
+  .noBtn {
+    width: 32vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .inputField {
+    width: 22vw;
+    height: 5vh;
+  }
+  .checkboxContainer {
+    width: 22vw;
+  }
+  .signInButton {
+    width: 22vw;
+    height: 3rem;
+  }
+  .contact {
+    margin-bottom: 7rem;
+    width: 22vw;
+  }
+  .modalInnerContainer {
+    width: 30vw;
+    height: 42vh;
+  }
+  .InnerLowerModal {
+    width: 25vw;
+  }
+  .yesBtn {
+    width: 25vw;
+  }
+  .noBtn {
+    width: 25vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .inputField {
+    width: 16vw;
+    height: 5vh;
+  }
+  .checkboxContainer {
+    width: 16vw;
+  }
+  .signInButton {
+    width: 16vw;
+    height: 3rem;
+  }
+  .contact {
+    margin-bottom: 7rem;
+    width: 16vw;
+  }
+  .modalInnerContainer {
+    width: 25vw;
+    height: 40vh;
+  }
+  .InnerLowerModal {
+    width: 20vw;
+  }
+  .yesBtn {
+    width: 20vw;
+  }
+  .noBtn {
+    width: 20vw;
+  }
+}
+
+@media screen and (min-width: 2880px) {
+  .inputField {
+    width: 16vw;
+    height: 5vh;
+  }
+  .checkboxContainer {
+    width: 16vw;
+  }
+  .signInButton {
+    width: 16vw;
+    height: 3rem;
+  }
+  .contact {
+    margin-bottom: 7rem;
+    width: 16vw;
+  }
+  .modalInnerContainer {
+    width: 19vw;
+    height: 22vh;
+  }
+  .InnerLowerModal {
+    width: 16vw;
+  }
+  .yesBtn {
+    width: 16vw;
+  }
+  .noBtn {
+    width: 16vw;
+  }
+}

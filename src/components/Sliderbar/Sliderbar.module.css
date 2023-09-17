@@ -1,0 +1,60 @@
+.sliderContainer{
+    display: flex;
+    flex-direction: row;
+    max-width: 20rem;
+    /* background-color: rgb(104, 141, 141); */
+  }
+.emoji{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-top: 2.5rem;
+    /* background-color: rgb(114, 219, 219); */
+  }
+
+.slider{
+  width: 4rem;
+ 
+  /* background-color: antiquewhite; */
+}
+.vranger {
+   
+    margin-top: 50px;
+     
+    transform: rotate(270deg);
+    -moz-transform: rotate(270deg); 
+    width: 20rem;
+    height: 25rem;
+    margin-top: 3rem;
+    position:relative;
+   
+  }
+
+
+.smile0Img{
+    width: 2rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+.emoji10{
+    margin-top: -.5rem;
+  }
+.emoji8{
+    margin-top: .8rem;
+  }
+  .emoji6{
+    margin-top: .5rem;
+  }
+  .emoji4{
+    margin-top: .5rem;
+  }
+  .emoji2{
+    margin-top: .5rem;
+  }
+
+  .smile0{
+    margin-top: .5rem;
+   
+  }
+

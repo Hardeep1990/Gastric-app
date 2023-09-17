@@ -1,0 +1,51 @@
+.erow1Text{
+    margin-top: .5rem;
+    line-height: 1.4rem;
+    font-family: var(--ff-primary);
+    font-size: .9rem;
+    font-weight: var(--fw-500);
+    line-height: 1.1rem;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #000000;
+}
+.eventRefluxCardSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:  #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 9.611rem;
+    width:8.215rem;
+    margin-top: .5rem;
+    border-radius:0.339rem;
+    margin-left:1.2rem;
+}
+.eventRefluxCardSec:hover{
+    box-shadow: 1px 1px 5px 4px lightblue;
+}
+.reluxImg{
+    height: 7.138rem;
+    width: 3.980rem;
+    margin-left: 2.1rem;
+    border-radius: 0rem;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+.eventScore{  
+    font-family: var(--ff-primary);
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-700);
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    display: flex;
+    justify-content:center;
+    margin-bottom: -1.4rem;
+    margin-left: 6rem;
+    color: var(--primary-blue);
+    /* background-color: bisque; */
+    width: 2rem;
+    
+    }

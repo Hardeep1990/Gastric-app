@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "name":"Upper Stomach Pain",
+        "img": "./Images/UpperPain.png"
+    },
+    {
+        "id":2,
+        "name":"Nausea",
+        "img": "./Images/Nausea.png"
+    },
+    {
+        "id":3,
+        "name":"Bloating",
+        "img": "./Images/Bloat.png"
+    },
+    {
+        "id":4,
+        "name":"Heartburn",
+        "img": "./Images/HeartBurn.png"
+    },
+    {
+        "id":5,
+        "name":"Stomach Burn",
+        "img": "./Images/StomachBurn.png"
+    },
+    {
+        "id":6,
+        "name":"Excessively Full",
+        "img": "./Images/Exfull.png"
+    },
+    {
+        "id":7,
+        "name":"Full Early",
+        "img": "./Images/EarlySatiety.png"
+    }
+]

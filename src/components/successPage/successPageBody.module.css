@@ -1,0 +1,137 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  margin-top: 9rem;
+}
+
+.tickImg > img {
+  margin: 2rem 0 1rem 0;
+  width: 128px;
+}
+
+.textBox > div:nth-child(1) {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-700);
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.textBox > div:nth-child(2) {
+  font-size: var(--fs-small);
+  color: var(--primary-blue);
+}
+
+.successImg > img {
+  width: 70vw;
+  margin-top: 3rem;
+}
+.buttonContainer {
+  display: flex;
+  justify-content:center;
+  margin-top: 5rem;
+  margin-left: 6rem;
+}
+.buttonFinish {
+  width: 16rem;
+  height: 3rem;
+  font-family: "DM Sans";
+  font-style: normal;
+  background: #3c6ba5;
+  border: 1px solid #3c6ba5;
+  padding: 0px 12px;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  position: relative;
+  color: white;
+  margin-left: 6rem;
+}
+/* .back_btn {
+  width: 190px;
+  height: 48px;
+  font-family: "DM Sans";
+  font-style: normal;
+  margin-left: 50px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 0px 12px;
+  border: 1px solid #3c6ba5;
+  color: #3c6ba5;
+} */
+.back_btn:hover,
+.buttonFinish:hover {
+  background-color: var(--primary-blue) !important;
+  color: #f2f1f6 !important;
+}
+@media screen and (min-width: 425px) {
+  .tickImg > img {
+    width: 70px;
+    margin: 4rem 0 2rem 0;
+  }
+  .successImg > img {
+    width: 8vh;
+  }
+  .buttonContainer > button {
+    width: 25vw;
+    height: 5vh;
+    margin: 3rem 3rem 2rem 0;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tickImg > img {
+    width: 128px;
+    margin: 4rem 0 2rem 0;
+  }
+  .successImg > img {
+    width: 16vw;
+  }
+  .buttonContainer > button {
+    width: 25vw;
+    height: 5vh;
+    margin: 4rem 3rem 2rem 0;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tickImg > img {
+    width: 128px;
+    margin: 4rem 0 2rem 0;
+  }
+  .successImg > img {
+    width: 18vw;
+  }
+  .buttonContainer > button {
+    width: 20vw;
+    height: 5vh;
+    margin: 0 3rem 2rem 0;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .tickImg > img {
+    width: 128px;
+    margin: 4rem 0 2rem 0;
+  }
+  .successImg > img {
+    width: 22vw;
+  }
+  .buttonContainer > button {
+    width: 15vw;
+    height: 5vh;
+    margin: 3rem 3rem 2rem 0;
+    background-color: white;
+  }
+}

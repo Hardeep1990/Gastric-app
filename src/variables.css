@@ -1,0 +1,24 @@
+:root {
+	/* colors */
+	--primary-blue: #242c69;
+	--secondary-blue: #3c6ba5;
+	--background-white: #cfd4d9;
+	--pure-white: #ffffff;
+	/* fc = font color */
+	--fc-dark: #212529;
+
+	/* font family */
+	--ff-primary: "DM Sans", sans-serif;
+
+	/* font sizes */
+	--fs-smallest: 1rem; /*16px*/
+	--fs-small: 1.25rem; /*20px*/
+	--fs-medium: 1.5rem; /*24px*/
+	--fs-large: 2.125rem; /*34px*/
+	--fs-xLarge: 3rem; /*48px*/
+
+	/* font weights */
+	--fw-400: 400;
+	--fw-500: 500;
+	--fw-700: 700;
+}

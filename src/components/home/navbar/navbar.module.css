@@ -1,0 +1,126 @@
+.navbar {
+  background-color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.ellipsis {
+  cursor: pointer;
+}
+.dayH1 {
+  text-align: center;
+  color: #fff;
+}
+/* .secondDiv {
+  width: 62vw;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+.firstDiv {
+  width: 50vw;
+}
+
+.blurNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.gastricLogo {
+  margin: 0 1rem;
+}
+
+.openedNavOutterContainer {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  height: 80vh;
+  transform: translate(100%);
+  animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translate(0%);
+  }
+}
+
+#closingNavOutterContainer {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  height: 80vh;
+  transform: translate(0%);
+  animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-out {
+  100% {
+    transform: translate(100%);
+  }
+}
+
+.closedNavOutterContainer {
+  display: none;
+}
+
+.openedNavInnerContainer {
+  background-color: var(--secondary-blue);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: white;
+}
+
+.welcomeHeader {
+  font-size: var(--fs-xLarge);
+  margin-bottom: 2rem;
+}
+
+.modalOrderedList {
+  font-weight: var(--fw-500);
+  font-size: var(--fs-small);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modalListOptions {
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 837px) {
+  .dayH1 {
+    font-size: 24px;
+
+    font-weight: 800;
+  }
+
+  .appName {
+    display: none;
+  }
+}
+
+/* @media screen and (min-width: 576px) and (max-width: 753px) {
+  .appName {
+    width: 117px;
+    height: 27px;
+  }
+} */
+
+/* @media screen and (min-width: 425px) {
+  .appName {
+    margin-left: 2rem;
+  }
+} */
